@@ -1,23 +1,110 @@
 aid: lara-networks
 name: Lara Networks
-description: Lara Networks is a company surfaced as a portfolio company of battery-ventures and added
-  to the API Evangelist network as a stub for enrichment. This profile is a lead awaiting the enrichment
-  pipeline.
+description: 'Lara Networks, Inc. (founded as Lara Technology) was a fabless semiconductor
+  company headquartered at 110 Nortech Parkway, San Jose, California, that architected,
+  designed, and marketed silicon-based packet-processing solutions for high-speed Internet
+  and networking infrastructure. Its products were built on a patent-pending Associative
+  Processing Technology (APT) and manufactured on 0.18-micron process technology: Network
+  Database Search Engine (NDSE) devices, network coprocessors, and NDSE subsystems, with
+  Content-Aware Switching (CAS) solutions in development. The devices were content-addressable
+  memory search engines that offloaded ultra-large table lookups from network processors —
+  holding tables of more than three million addresses and sustaining over 100 million lookups
+  per second so switches and routers could process packets from Layer 2 to Layer 7 at full
+  line rate at OC-48 (2.5Gbps) and above. The company raised a $40 million second round in
+  October 2000 led by Raza Ventures with Battery Ventures, InveStar Capital, and TeleSoft
+  Venture Partners, alongside a long-term co-development agreement and minority equity
+  investment from STMicroelectronics. Lara Networks no longer operates independently: by
+  January 2003 its laranetworks.com domain served Cypress Semiconductor Corporation content,
+  and today every path on the domain 301-redirects to Infineon Technologies, which acquired
+  Cypress in April 2020. As a fabless chip company selling silicon to network equipment
+  manufacturers, Lara Networks never operated a web or developer API program, and no public
+  API surface exists to enrich. This profile is retained as an acquired-company lead.'
 url: https://raw.githubusercontent.com/api-evangelist/lara-networks/refs/heads/main/apis.yml
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/lara-networks.png
 x-type: company
 x-source: vc-portfolio
 x-backed-by:
 - battery-ventures
+x-investors:
+- Raza Ventures
+- Battery Ventures
+- InveStar Capital
+- TeleSoft Venture Partners
+- STMicroelectronics
+x-former-name: Lara Technology, Incorporated
+x-headquarters: San Jose, California, United States
 x-tier: stub
 x-tier-reason: portfolio-lead
+x-status: acquired
+x-status-detail: Acquired into Cypress Semiconductor Corporation; the laranetworks.com domain
+  served Cypress content by January 2003 and now redirects to Infineon Technologies, which
+  acquired Cypress in April 2020.
+x-acquired-by: cypress-semiconductor
+x-successor: Infineon Technologies
+x-no-api-surface: true
+x-evidence:
+- probe: https://www.laranetworks.com/
+  result: 301 -> https://www.infineon.com/about/company?site=www.laranetworks.com
+  note: every path, including /.well-known/security.txt, /.well-known/api-catalog and
+    /llms.txt, 301-redirects to the same Infineon corporate page; the site= query parameter
+    echoes the requested laranetworks.com hostname, Infineon's standard handling for domains
+    it holds from acquired entities
+- probe: whois laranetworks.com
+  result: created 2000-01-22, registrar CSC Corporate Domains, name servers
+    pdns1/pdns2.cscdns.net — an enterprise corporate registrar, not an expired or parked domain
+- probe: apex laranetworks.com over HTTPS
+  result: no response (connection failure); only the www host answers, and only to redirect
+- probe: web.archive.org snapshot 2001-05-15 of www.laranetworks.com
+  result: live Lara Networks site describing APT, NDSE devices, network coprocessors and the
+    LNI7000 family; the investors page lists Battery Ventures, InveStar Capital, Raza Ventures,
+    TeleSoft Venture Partners and STMicroelectronics
+- probe: web.archive.org snapshot 2002 of www.laranetworks.com/aboutus/profile.cfm
+  result: serves "Cypress - About Us" dated Jan. 16, 2003, copyright Cypress Semiconductor
+    Corporation — the domain had been folded into Cypress's site by then
+- probe: developer/API surface search across the live domain and the archived site
+  result: none — no developer portal, documentation, API reference, SDKs, or machine-readable
+    specification has ever existed for this company
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-19'
 tags:
 - Company
+- Semiconductor
+- Networking
+- Packet Processing
+- Content Addressable Memory
+- Network Search Engine
+- Internet Infrastructure
+- Fabless
+- Hardtech
+- Acquired
 apis: []
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
 - FN: APIs.json
   email: info@apis.io
+common:
+- type: DomainSecurity
+  url: security/lara-networks-domain-security.yml
+- type: Website
+  url: https://www.laranetworks.com
+- type: Successor
+  name: Infineon Technologies
+  url: https://www.infineon.com
+x-enrichment:
+  date: '2026-07-19'
+  status: backfilled
+  pass: local-v1
+  note: backfilled from .gitignore signal + verified work evidence
