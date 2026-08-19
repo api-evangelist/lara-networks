@@ -75,7 +75,7 @@ x-evidence:
 - probe: developer/API surface search across the live domain and the archived site
   result: none — no developer portal, documentation, API reference, SDKs, or machine-readable
     specification has ever existed for this company
-specificationVersion: '0.20'
+specificationVersion: '0.23'
 created: '2026-07-17'
 modified: '2026-07-19'
 tags:
