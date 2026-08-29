@@ -20,6 +20,17 @@ description: 'Lara Networks, Inc. (founded as Lara Technology) was a fabless sem
   manufacturers, Lara Networks never operated a web or developer API program, and no public
   API surface exists to enrich. This profile is retained as an acquired-company lead.'
 url: https://raw.githubusercontent.com/api-evangelist/lara-networks/refs/heads/main/apis.yml
+deliveryModel:
+  model: unknown
+  open_source: false
+  commercial: false
+  callable_host: false
+  label: Delivery model not determined — needs a product licence on record
+  confidence: low
+  source:
+  - none
+  generated: '2026-08-28'
+  method: derived
 accessModel:
   pricing: unknown
   onboarding: unknown
