@@ -1,0 +1,32 @@
+# Front Door AI Index — lara-networks — 2026-09-17
+# AI vocabulary counted on the provider's root page. Generated; do not edit.
+# `score` is null unless ownership is `own` — see front_door_ai.py.
+front_door_ai:
+  slug: lara-networks
+  lexicon_version: '1.0'
+  probed_at: '2026-09-17'
+  host: www.laranetworks.com
+  final_host: www.infineon.com
+  ownership: own
+  owner: lara-networks
+  shares_host_with: null
+  inherited_from: null
+  verdict: scored
+  score: 31
+  host_score: 31
+  density: 3.73
+  words: 8321
+  tiers:
+    agentic: 1
+    core: 28
+    model: 2
+  ambiguous: 72
+  top_terms:
+    smart: 60
+    AI: 21
+    automation: 10
+    machine learning: 5
+    artificial intelligence: 2
+    intelligence: 2
+    transformer: 2
+    MCP: 1
