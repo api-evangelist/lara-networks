@@ -64,44 +64,44 @@
 > Full detail: **[Where this data comes from](https://apievangelist.com/about/where-our-data-comes-from)**
 <!-- API-EVANGELIST-PROVENANCE:END -->
 
-Lara Networks, Inc. (founded as **Lara Technology, Incorporated**) was a fabless semiconductor company
-headquartered at 110 Nortech Parkway, San Jose, California. It architected, designed, and marketed
-silicon-based packet-processing solutions for high-speed Internet and networking infrastructure, built on
-its patent-pending **Associative Processing Technology (APT)** and manufactured on 0.18-micron process
-technology.
+> **Acquired or rebranded.** This company was acquired, merged or renamed. Its API, if it still exists, is offered under another name. This profile is kept as a historical record and is not maintained or rated.
 
-Its product portfolio was **Network Database Search Engine (NDSE)** devices, network coprocessors, and
-NDSE subsystems, with **Content-Aware Switching (CAS)** solutions in development. These were
-content-addressable memory search engines that offloaded ultra-large table lookups from network
-processors — holding tables of more than three million addresses and sustaining over 100 million lookups
-per second, so switches and routers could process packets from Layer 2 to Layer 7 at full line rate at
-OC-48 (2.5Gbps) and above. Parts shipped under the `LTI7000` (Lara Technology) and `LNI7000` (Lara
-Networks) family names.
+Lara Networks, Inc. (founded as Lara Technology) was a fabless semiconductor company headquartered at 110 Nortech Parkway, San Jose, California, that architected, designed, and marketed silicon-based packet-processing solutions for high-speed Internet and networking infrastructure. Its products were built on a patent-pending Associative Processing Technology (APT) and manufactured on 0.18-micron process technology: Network Database Search Engine (NDSE) devices, network coprocessors, and NDSE subsystems, with Content-Aware Switching (CAS) solutions in development. The devices were content-addressable memory search engines that offloaded ultra-large table lookups from network processors — holding tables of more than three million addresses and sustaining over 100 million lookups per second so switches and routers could process packets from Layer 2 to Layer 7 at full line rate at OC-48 (2.5Gbps) and above. The company raised a $40 million second round in October 2000 led by Raza Ventures with Battery Ventures, InveStar Capital, and TeleSoft Venture Partners, alongside a long-term co-development agreement and minority equity investment from STMicroelectronics. Lara Networks no longer operates independently: by January 2003 its laranetworks.com domain served Cypress Semiconductor Corporation content, and today every path on the domain 301-redirects to Infineon Technologies, which acquired Cypress in April 2020. As a fabless chip company selling silicon to network equipment manufacturers, Lara Networks never operated a web or developer API program, and no public API surface exists to enrich. This profile is retained as an acquired-company lead.
 
-In **October 2000** the company secured a **$40 million second round led by Raza Ventures**, with Battery
-Ventures, InveStar Capital, and TeleSoft Venture Partners participating, alongside a long-term
-co-development agreement and minority equity investment from **STMicroelectronics**.
+**Areas:** Company · Semiconductors · Networking · Packet Processing · Content Addressable Memory · Network Search Engine · Internet Infrastructure · Fabless · Hardtech · Acquired
 
-## Status: acquired — no API surface
+## Lara Networks on APIs.io (historical record)
 
-The company no longer operates independently. Verified by live probe and archive review (2026-07-19):
+Everything profiled for Lara Networks is published on APIs.io rather than in this repository. Start at the provider page — **[apis.io/providers/lara-networks/](https://apis.io/providers/lara-networks/)** — or go straight to one of the APIs or properties below.
 
-- `https://www.laranetworks.com/` `301` → `https://www.infineon.com/about/company?site=www.laranetworks.com`
-- Every path, including `/.well-known/security.txt`, `/.well-known/api-catalog`, and `/llms.txt`,
-  301-redirects to the same Infineon corporate page; the `site=` parameter echoes the requested hostname,
-  Infineon's standard handling for domains it holds from acquired entities
-- `whois laranetworks.com`: created 2000-01-22, registrar **CSC Corporate Domains**, name servers
-  `pdns1/pdns2.cscdns.net` — an enterprise corporate registrar, not an expired or parked domain
-- The apex `laranetworks.com` does not answer over HTTPS; only the `www` host responds, and only to redirect
-- Wayback snapshot **2001-05-15** shows the live Lara Networks site (APT, NDSE, LNI7000) and an investors
-  page naming Battery Ventures, InveStar Capital, Raza Ventures, TeleSoft Venture Partners, and STMicroelectronics
-- Wayback snapshot of `/aboutus/profile.cfm` serves **"Cypress - About Us"** dated Jan. 16, 2003,
-  copyright Cypress Semiconductor Corporation — the domain had been folded into Cypress's site by then
-- Cypress Semiconductor was itself **acquired by Infineon Technologies in April 2020**, which is why the
-  domain now terminates at infineon.com
+### Published properties
 
-As a fabless chip company selling silicon to network equipment manufacturers, Lara Networks never operated
-a web or developer API program, so there is nothing to enrich beyond identity and domain posture. The only
-artifact in this repo is a live domain-security probe of the redirecting host.
+Each property below is a page on APIs.io carrying the machine-readable artifact and what it says.
 
-Backed by: battery-ventures
+#### Security (1)
+
+Authentication, trust centre, and vulnerability disclosure.
+
+- [Lara Networks Domain Security](https://apis.io/security/lara-networks/lara-networks-domain-security/)
+
+## Where to find this API
+
+Links to the company's own pages. This repository publishes no copy of their specifications — the canonical document is theirs and lives at the URLs below.
+
+- [Website](https://www.laranetworks.com)
+
+## API Evangelist rating
+
+**Not rated** — this company is recorded as acquired or rebranded, so no score is published. If it is in fact operating, say so on this repository and it will be re-profiled.
+
+## How this profile is made
+
+API Evangelist profiles a company's public API surface the way a developer would find it: the website, developer portal and documentation, the specifications it publishes, its public repositories, and its pricing, status and changelog pages. From that it derives the properties above — contracts split per API, workflows, schemas, collections, governance rules, plans and rate limits — and scores them against the published [Kin Score rubric](https://github.com/api-evangelist/kin-score).
+
+The artifacts are published on [APIs.io](https://apis.io), not in this repository. This repository is the public record for Lara Networks: the place to say something is wrong, missing or out of date, and to ask for a re-score or a removal.
+
+## Open an issue
+
+- **Something about this listing** — a wrong description, a missing API, a stale artifact or a question about the rating: [open an issue on this repository](https://github.com/api-evangelist/lara-networks/issues/new).
+- **A new API, or one that is not in the catalog yet** — [submit it on APIs.io](https://apis.io/add/).
+- **Anything else** — [the APIs.io inbox](https://github.com/api-search/inbox/issues/new) or [info@apievangelist.com](mailto:info@apievangelist.com).
